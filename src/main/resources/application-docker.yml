@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.padroesdeprojeto.gof: INFO
+
+management:
+  endpoint:
+    health:
+      show-details: never
