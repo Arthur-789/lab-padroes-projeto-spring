@@ -8,8 +8,8 @@ API REST que cadastra clientes e resolve automaticamente o endereço corresponde
 
 ## Sobre o projeto
 
-Este projeto foi desenvolvido para o Lab **"Explorando Padrões de Projetos na Prática com Java"**, da **[DIO (Digital Innovation One)](https://www.dio.me)**. A base original do laboratório demonstrava os padrões **Singleton**, **Strategy** e **Facade** aplicados a um cadastro simples de clientes com integração ao ViaCEP.
-O projeto foi **reescrito e expandido**, mantendo o objetivo original, mas acrescentando novos padrões de projeto, uma arquitetura em camadas mais rica, tratamento de erros consistente, testes automatizados e execução em conteiner.
+Este projeto foi desenvolvido para o Lab "Explorando Padrões de Projetos na Prática com Java", da **[DIO (Digital Innovation One)](https://www.dio.me)**. A base original do laboratório demonstrava os padrões Singleton, Strategy e Facade aplicados a um cadastro simples de clientes com integração ao ViaCEP.
+O projeto foi expandido, mantendo o objetivo original, mas acrescentando novos padrões de projeto, uma arquitetura em camadas mais rica, tratamento de erros consistente, testes automatizados e execução em conteiner.
 
 ---
 
@@ -105,7 +105,7 @@ curl http://localhost:8080/api/clientes/1
 ```bash
 curl -X PUT http://localhost:8080/api/clientes/1 \
   -H "Content-Type: application/json" \
-  -d '{"nome": "Grace Brewster Hopper", "cep": "20040-020"}'
+  -d '{"nome": "Ada Lovelace", "cep": "20040-020"}'
 ```
 
 **Remover um cliente:**
