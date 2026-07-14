@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: padroesdeprojeto
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:default}
+  datasource:
+    url: jdbc:h2:mem:padroesdeprojeto;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: user
+    password: ""
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+padroesdeprojeto:
+  viacep:
+    url: https://viacep.com.br/ws
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
+logging:
+  level:
+    com.padroesdeprojeto.gof: INFO
