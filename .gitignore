@@ -32,3 +32,10 @@ build/
 ### VS Code ###
 .vscode/
 /bin/
+
+### Docker ###
+docker-data/
+
+### OS ###
+.DS_Store
+Thumbs.db
